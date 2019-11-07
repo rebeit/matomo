@@ -56,7 +56,7 @@ class DbTable implements Zend_Session_SaveHandler_Interface
      */
     public function open($save_path, $name)
     {
-        Db::get()->getConnection();
+        Db::get();
 
         return true;
     }
